@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor-padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.icono p {
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: black;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navegacion a {
+    color: black;
+    font-weight: 400;
+}
+
+.navegacion  :last-child a {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(126, 111, 198);
+    border-radius: 30px;
+    background: linear-gradient(
+
+        to bottom,
+
+        #9A8CE0 0%,
+
+        #7E6FC6 50%,
+
+        #6A5BB0 100%
+
+    );  
+}
+
+.texto-izquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 8%;
+    width: 45%;
+}
+
+.encabezado {
+    height: 550px;
+    font-size: 100px;
+    font-weight: 900;
+    padding-top: 5%;
+    color: white;
+}
+
+.descripcion {
+    font-size: 25px;
+    color: white;
+}
+
+.imagen {
+    display: flex;
+    width: 55%;
+    align-items: end;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 30px 0;
+    bottom: 100%;
+}
+
+.texto-izquierda button {
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    margin: 40px 0 40px 0;
+    color: white;
+}
+
+.resaltado-blanco,
+.resaltado-amarillo {
+    position: relative;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.resaltado-blanco::before,
+.resaltado-amarillo::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px 0 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.resaltado-blanco::before {
+    background-color: #FF8C42;
+    transform: rotate(-2deg);
+}
+
+.resaltado-amarillo::before {
+    background-color: #CCFF00;
+    transform: rotate(3deg);
+}

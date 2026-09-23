@@ -3,167 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de trabajos prácticos de Desarrollo Web.">
-    <title>Trabajos de Desarrollo Web</title>
+    <title>Mis Trabajos de Diseño Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <a class="logo" href="#inicio">Desarrollo Web</a>
 
-        <nav class="nav" aria-label="Navegación principal">
-            <a href="#inicio">Inicio</a>
-            <a href="#trabajos">Trabajos</a>
-            <a href="#sobre-mi">Sobre mí</a>
-        </nav>
+    <header>
+        <h1>Mis Trabajos de Diseño Web</h1>
+        <p>Página principal de mis trabajos prácticos</p>
     </header>
 
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#sobre-mi">Sobre la página</a>
+    </nav>
+
     <main>
-        <section class="hero" id="inicio">
-            <div class="hero-contenido">
-                <p class="etiqueta">PORTFOLIO · DESARROLLO WEB</p>
-                <h1>Aprendiendo a crear<br><span>para la web.</span></h1>
-                <p class="hero-texto">
-                    Este sitio reúne mis prácticas y trabajos realizados durante el cursado de Desarrollo Web,
-                    desde HTML y CSS hasta Flexbox, Grid y maquetación responsive.
-                </p>
-
-                <div class="hero-botones">
-                    <a class="boton boton-principal" href="#trabajos">Ver trabajos</a>
-                    <a class="boton boton-secundario" href="#sobre-mi">Sobre el proyecto</a>
-                </div>
-            </div>
-
-            <div class="hero-visual" aria-hidden="true">
-                <div class="codigo">
-                    <div class="codigo-barra">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <pre><code><span class="azul">&lt;section</span> <span class="celeste">class</span>=<span class="verde">"proyecto"</span><span class="azul">&gt;</span>
-  <span class="azul">&lt;h1&gt;</span>Aprender creando<span class="azul">&lt;/h1&gt;</span>
-  <span class="azul">&lt;p&gt;</span>HTML + CSS<span class="azul">&lt;/p&gt;</span>
-<span class="azul">&lt;/section&gt;</span></code></pre>
-                </div>
-            </div>
-        </section>
-
-        <section class="trabajos" id="trabajos">
-            <div class="titulo-seccion">
-                <div>
-                    <p class="etiqueta">MIS PRÁCTICAS</p>
-                    <h2>Trabajos realizados</h2>
-                </div>
-                <p>Una colección de ejercicios para practicar estructura, estilos, Flexbox, Grid y diseño web.</p>
-            </div>
-
-            <div class="grid-trabajos">
-                <article class="tarjeta">
-                    <div class="numero">01</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">HTML</span>
-                        <h3>Clase 1</h3>
-                        <p>Primer ejercicio básico de estructura HTML y texto.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 1/index.html" aria-label="Abrir Clase 1">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="numero">02</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">HTML · CSS</span>
-                        <h3>Tarjetas básicas</h3>
-                        <p>Ejercicio de tarjetas utilizando clases, márgenes, padding, bordes y colores.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 2/tarjetas.html" aria-label="Abrir Tarjetas básicas">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="numero">03</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">FLEXBOX</span>
-                        <h3>Práctica de Flex</h3>
-                        <p>Ejercicio inicial para distribuir elementos y practicar navegación con Flexbox.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 3/index.html" aria-label="Abrir Práctica de Flex">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta destacada">
-                    <div class="numero">04</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">NAVBAR · FLEXBOX</span>
-                        <h3>Barra de navegación</h3>
-                        <p>Navbar con enlaces internos y externos organizado mediante Flexbox.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 3/tarea/index.html" aria-label="Abrir Barra de navegación">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="numero">05</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">FLEXBOX · CARDS</span>
-                        <h3>Galería de productos</h3>
-                        <p>Conjunto de tarjetas de productos construido con contenedores flexibles.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 4/practica-flexbox.html" aria-label="Abrir Galería de productos">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="numero">06</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">COMPONENTES</span>
-                        <h3>Tarjeta de producto</h3>
-                        <p>Práctica de composición visual para representar información de un producto.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 5/index.html" aria-label="Abrir Tarjeta de producto">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="numero">07</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">CSS GRID</span>
-                        <h3>Primeros pasos con Grid</h3>
-                        <p>Ejercicio para comprender la distribución de elementos mediante CSS Grid.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 6/index.html" aria-label="Abrir Primeros pasos con Grid">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta">
-                    <div class="numero">08</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">GRID · LAYOUT</span>
-                        <h3>Maquetación semántica</h3>
-                        <p>Distribución de header, nav, section, article, aside y footer usando Grid.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 6/tarea/index.html" aria-label="Abrir Maquetación semántica">Abrir <span>↗</span></a>
-                </article>
-
-                <article class="tarjeta destacada">
-                    <div class="numero">09</div>
-                    <div class="tarjeta-contenido">
-                        <span class="tema">LANDING PAGE</span>
-                        <h3>Fashion</h3>
-                        <p>Prototipo de landing page con navegación, contenido principal e imagen destacada.</p>
-                    </div>
-                    <a class="tarjeta-link" href="clase 7/index.html" aria-label="Abrir Fashion">Abrir <span>↗</span></a>
-                </article>
-            </div>
-        </section>
-
-        <section class="sobre-mi" id="sobre-mi">
-            <div>
-                <p class="etiqueta">SOBRE ESTE SITIO</p>
-                <h2>Un portfolio que crece junto con mis conocimientos.</h2>
-            </div>
+        <section id="inicio" class="inicio">
+            <h2>Bienvenido</h2>
             <p>
-                La página principal funciona como índice general de mis trabajos. Cada práctica se mantiene
-                en su propia carpeta para que el proyecto sea ordenado y sea sencillo agregar nuevos ejercicios.
+                En esta página están organizados los trabajos prácticos realizados
+                durante la materia de Diseño Web.
+            </p>
+            <a class="boton" href="#trabajos">Ver trabajos</a>
+        </section>
+
+        <section id="trabajos" class="seccion-trabajos">
+            <h2>Trabajos prácticos</h2>
+
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <h3>Trabajo Práctico 1</h3>
+                    <p>Práctica de tarjetas con HTML y CSS.</p>
+                    <a href="./clase%201/TrabajoPractico1/tarjetas.html" target="_blank">Abrir trabajo</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Trabajo Práctico 2</h3>
+                    <p>Práctica de estructura y navegación.</p>
+                    <a href="./clase%201/TrabajoPractico2/index.html" target="_blank">Abrir trabajo</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Trabajo Práctico 3</h3>
+                    <p>Práctica utilizando Flexbox.</p>
+                    <a href="./clase%201/TrabajoPractico3/practica-flexbox.html" target="_blank">Abrir trabajo</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Trabajo Práctico 4</h3>
+                    <p>Práctica de organización de elementos.</p>
+                    <a href="./clase%201/TrabajoPractico4/index.html" target="_blank">Abrir trabajo</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Trabajo Práctico 5</h3>
+                    <p>Práctica de diseño de una página web.</p>
+                    <a href="./clase%201/TrabajoPractico5/index.html" target="_blank">Abrir trabajo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="sobre">
+            <h2>Sobre la página</h2>
+            <p>
+                Esta página fue creada para tener todos los trabajos de la materia
+                ordenados en un solo lugar.
             </p>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>Trabajos de Desarrollo Web</p>
-        <a href="#inicio">Volver arriba ↑</a>
+    <footer>
+        <p>Diseño Web - 2026</p>
     </footer>
+
 </body>
 </html>

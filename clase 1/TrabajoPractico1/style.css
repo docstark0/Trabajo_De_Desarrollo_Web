@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tarjeta1{
+    background-color: #ff6b6b;
+    border: 2px solid rgb(21, 0, 255);
+    padding: 15px;
+    margin: 20px;
+}
+
+.tarjeta2{
+    background-color: #ff6b6b;
+    border: 2px solid rgb(255, 0, 200);
+    padding: 15px;
+    margin: 20px;
+}
+
+.tarjeta3{
+    background-color: #ff6b6b;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 15px;
+    margin: 20px;
+}
