@@ -1,0 +1,46 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal de la barra usando Flexbox */
+.navbar {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Separa el logo de los enlaces a los extremos */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: #111111;
+    padding: 0 40px;
+    height: 70px;
+}
+
+/* Estilo del Logo */
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de la lista de enlaces usando Flexbox */
+.nav-links {
+    display: flex; /* Activa Flexbox para poner los enlaces en fila */
+    gap: 30px; /* Separación entre cada enlace (muy útil en Flexbox) */
+    list-style: none; /* Quita los puntos de la lista <ul> */
+}
+
+/* === RESPUESTA A LA NOTA DEL EJERCICIO === */
+/* Cómo quitar los textos decorativos o subrayados por default */
+.nav-links li a {
+    text-decoration: none; /* Esta es la propiedad clave que quita el subrayado */
+    color: #a1a1a1; /* Color gris claro */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el cursor */
+.nav-links li a:hover {
+    color: #ffffff; /* Se ilumina a blanco */
+}
